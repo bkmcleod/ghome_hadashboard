@@ -1,0 +1,93 @@
+<% content_for :title do %>HADashboard<% end %>
+
+<div class="gridster"> <!-- Main Panel - PAGE 1 -->
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="clock" data-view="Clock" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
+      <div data-id="weather" data-view="Haweather" data-unit="&deg;F" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="house_mode" data-view="Hainputselect" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="side_temp_corrected" data-view="Hasensor" data-title="Temperature" data-unit="&deg;F" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="1" data-col="6" data-sizex="1" data-sizey="1" data-color="#FF0000">
+      <div data-id="side_humidity_corrected" data-view="Hasensor" data-title="Humidity" data-unit="%" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="1" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="side_humidity_corrected" data-view="Hameter" data-title="Humidity" data-unit="%" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="2" data-col="5" data-sizex="2" data-sizey="1">
+      <div data-id="side_multisensor_luminance_25" data-view="Hasensor" data-title="Light Level" data-unit="lux" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="2" data-col="5" data-sizex="2" data-sizey="1">
+      <div data-id="presence_mod" data-view="Hasensor" data-title="Presence" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="1" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="andrew" data-view="Hadevicetracker" data-title="Andrew" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="2" data-col="8" data-sizex="1" data-sizey="1">
+      <div data-id="garage" data-view="Hacover" data-title="Garage" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="2" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="porch_multisensor_sensor_27" data-view="Habinary" data-title="Porch" data-color="#FF0000"></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="brendans_office_bright" data-view="Hascene" data-title="Office Bright" data-ontime="1000" data-color="#FF0000"></div>
+    </li>
+
+	<li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="brendans_office_off" data-view="Hascene" data-title="Office Off"  data-ontime="1000" data-color="#FF0000"></div>
+    </li>
+ 
+	  <li data-row="3" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="front_door" data-view="Halock" data-title="Front Door" data-color="#FF0000"></div>
+    </li>
+
+	  <li data-row="3" data-col="8" data-sizex="1" data-sizey="1">
+      <div data-id="heating" data-view="Hainputboolean" data-icon="sliders" data-title="Heat" data-color="#FF0000"></div>
+    </li>
+
+
+	<li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="andrew_bedside" data-view="Hadimmer" data-title="Andrew's Lamp" data-color="#FF0000"></div>
+    </li>
+
+	<li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="upstairs_lights" data-view="Hagroup" data-title="Upstairs Lights" data-color="#FF0000"></div>
+    </li>
+    
+  	<li data-row="4" data-col="7" data-sizex="2" data-sizey="1">
+      <div data-id="evening" data-view="Hascript" data-title="Evening" data-color="#FF0000"></div>
+    </li>
+
+	<li data-row="5" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="day" data-view="Hamode" data-title="Good Day" data-icon="sun-o" data-changemode="Day" data-input="house_mode"></div>
+    </li>
+	
+    <li data-row="5" data-col="7" data-sizex="2" data-sizey="1">
+      <div data-id="night" data-view="Hamode" data-title="Good Night" data-icon="star-o"  data-changemode="Night" data-input="house_mode"></div>
+    </li>
+    
+    <li data-row="6" data-col="8" data-sizex="1" data-sizey="1">
+      <div data-id="reload" data-view="Reload"></div>
+    </li>
+
+  </ul>
+</div>
+
+
