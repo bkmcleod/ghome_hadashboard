@@ -11,6 +11,7 @@ dashing.pid
 log/thin.log
 /hapush
 ha_conf.rb.example
+config.ru
 
 # Virtual environment folder for running hapush
 venv*
