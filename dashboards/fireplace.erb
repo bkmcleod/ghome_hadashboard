@@ -1,0 +1,27 @@
+<% content_for :title do %>HADashboard<% end %>
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.numColumns = 3
+});
+</script>
+<div class="gridster"> <!-- Main Panel - PAGE 1 -->
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="fireplace_temperature" data-view="Hatemp" data-title="Fireplace Exahust" data-ontime="500" data-color="#FF0000"></div>
+    </li>
+
+
+
+  </ul>
+</div>
+
+<div class="gridster"> <!-- Power Strip - PAGE 2 -->
+  <ul>
+
+
+  </ul>
+</div>
+
+
