@@ -2,7 +2,7 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.numColumns = 3
+  Dashing.numColumns = 5
 });
 </script>
 <div class="gridster"> <!-- Main Panel - PAGE 1 -->
@@ -12,8 +12,12 @@ $(function() {
       <div data-id="brendans_office_simple_on" data-view="Hascript" data-title="Office Bright" data-ontime="500" data-color="#FF0000"></div>
     </li>
 
-	<li data-row="1" data-col="2" data-sizex="1" data-sizey="2">
+	<li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="brendans_office_simple_off" data-view="Hascript" data-title="Office Off"  data-ontime="500" data-color="#FF0000"></div>
+    </li>
+
+	<li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="brendans_office_off" data-view="Hascene" data-title="Lights Off"  data-ontime="500" data-color="#FF0000"></div>
     </li>
  
 	<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
@@ -27,6 +31,10 @@ $(function() {
 	
 	<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
       <div data-id="cpage1" data-view="ChangePage" data-icon="plug" data-title="Power Strip" data-page="2" data-stagger="false" data-fasttransition="true" data-event-click="onClick"></div>
+    </li>
+	
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="office_center_monitor" data-view="Haswitch" data-title="Asus" data-ontime="500" data-color="#FF0000"></div>
     </li>
 
 
@@ -42,8 +50,8 @@ $(function() {
 
 <div class="gridster"> <!-- Power Strip - PAGE 2 -->
   <ul>
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="cpage1" data-view="ChangePage" data-icon="cogs" data-title="Back" data-page="1" data-stagger="false" data-fasttransition="true" data-event-click="onClick"></div>
+	<li data-row="6" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpage1" data-view="ChangePage" data-icon="long-arrow-left" data-title="Back" data-page="1" data-stagger="false" data-fasttransition="true" data-event-click="onClick"></div>
     </li>
 	
 	<li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
